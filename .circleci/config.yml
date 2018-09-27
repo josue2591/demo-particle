@@ -90,13 +90,13 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             # @TODO: Add ssh_key fingerprint here.
-            - ""
+            - "4e:7b:2a:a4:b6:59:4c:90:30:dd:ee:a6:19:bb:ab:aa"
       - run:
           name: Deploy
           command: |
             # @TODO: Configure git.
-            git config --global user.email ""
-            git config --global user.name ""
+            git config --global user.email "josue@estudiomanati.com"
+            git config --global user.name "Josué"
             echo 'Host *' >> /root/.ssh/config
             echo '   StrictHostKeyChecking no' >> /root/.ssh/config
             ahoy site deploy master "Auto deploy triggered from master branch"

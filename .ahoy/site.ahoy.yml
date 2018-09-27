@@ -6,7 +6,7 @@ commands:
       BRANCH=$1
       MESSAGE=$2
       # @TODO: Add Pantheon repo url.
-      REPO=""
+      REPO="ssh://codeserver.dev.65af23d6-885d-4f71-b9cd-b645b2e47126@codeserver.dev.65af23d6-885d-4f71-b9cd-b645b2e47126.drush.in:2222/~/repository.git"
       BUILDFOLDER=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1`
       CLONEFOLDER=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1`
       mv web $BUILDFOLDER

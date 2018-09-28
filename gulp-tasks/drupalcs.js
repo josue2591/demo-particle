@@ -18,7 +18,7 @@ gulp.task('drupalcs', function () {
   var extensions = '{php,module,inc,install,test,profile,theme}';
   var sourcePatterns = [
     'modules/**/*.' + extensions,
-    'themes/**/*.' + extensions,
+    // 'themes/**/*.' + extensions,
     'tests/behat/**/*.' + extensions,
     'settings/**/*.' + extensions
   ];

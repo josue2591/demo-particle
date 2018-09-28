@@ -16,8 +16,8 @@ gulp.task('eslint', function () {
   var sourcePatterns = [
     'gulpfile.js',
     'gulp-tasks/*.js',
-    'modules/**/*.js',
-    'themes/**/*.js'
+    'modules/**/*.js'
+    // 'themes/**/*.js'
   ];
   var writeOutput = argv.hasOwnProperty('outputfile');
   var wstream;

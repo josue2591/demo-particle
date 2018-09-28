@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8706af514a3d146ca2468583fb9ed420",
+    "content-hash": "63d5cff0112d01612a42471ff2455d36",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3874,16 +3874,16 @@
         },
         {
             "name": "manaticr/trichechus",
-            "version": "dev-feature/add-base-theme",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ManatiCR/trichechus.git",
-                "reference": "4477ca41fd21ffcb7d8dec3807ddf99b93f1d445"
+                "reference": "84765634f4d41a3b0a7cee3db5983e21ebe363a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ManatiCR/trichechus/zipball/4477ca41fd21ffcb7d8dec3807ddf99b93f1d445",
-                "reference": "4477ca41fd21ffcb7d8dec3807ddf99b93f1d445",
+                "url": "https://api.github.com/repos/ManatiCR/trichechus/zipball/84765634f4d41a3b0a7cee3db5983e21ebe363a0",
+                "reference": "84765634f4d41a3b0a7cee3db5983e21ebe363a0",
                 "shasum": ""
             },
             "require": {
@@ -3953,7 +3953,7 @@
                 }
             ],
             "description": "Trichechus Install Profile",
-            "time": "2018-09-21T16:13:24+00:00"
+            "time": "2018-09-19T21:44:15+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -8851,7 +8851,6 @@
     "stability-flags": {
         "wikimedia/composer-merge-plugin": 20,
         "kporras07/composer-symlinks": 20,
-        "manaticr/trichechus": 20,
         "testdrupal/behatextension": 20
     },
     "prefer-stable": true,

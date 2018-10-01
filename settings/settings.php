@@ -40,12 +40,14 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
       $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
       $config['environment_indicator.indicator']['name'] = 'Live';
       break;
+
     case 'test':
       // Environment indicator.
       $config['environment_indicator.indicator']['bg_color'] = '#F39500';
       $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
       $config['environment_indicator.indicator']['name'] = 'Test';
       break;
+
     case 'dev':
       // Environment indicator.
       $config['environment_indicator.indicator']['bg_color'] = '#0FC37B';

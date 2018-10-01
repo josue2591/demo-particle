@@ -1,0 +1,22 @@
+uuid: e16f1d61-043d-419d-83a5-be0adc825258
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bedrock
+_core:
+  default_config_hash: qNQnBkmHpPu6VUYHhWzqsO9tYloYebCrdkleIgJQ_d4
+id: bedrock_powered
+theme: bedrock
+region: header
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

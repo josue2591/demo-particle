@@ -1,0 +1,22 @@
+uuid: b817ca18-5dac-443f-84cc-5597c9796fde
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bedrock
+_core:
+  default_config_hash: SmUN35NaWEQVrC6TESnCQLMO280xy4qUoQB4qxmdwH4
+id: bedrock_local_tasks
+theme: bedrock
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

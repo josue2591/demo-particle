@@ -1,0 +1,19 @@
+uuid: 503eeacf-38d9-44e3-8cf7-0b6b4d2c7197
+langcode: en
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: OYFxaM_nbACEFYVqBos7lP5rPu147bohTJGRhKYK6yw
+id: dev
+label: Dev
+folder: sites/default/config/dev
+module:
+  field_ui: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - core.extension
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

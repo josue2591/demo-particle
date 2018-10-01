@@ -1,0 +1,26 @@
+uuid: 2ad8b069-8d91-4015-9cae-94f174e9b67d
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - bedrock
+_core:
+  default_config_hash: Ojhrvx_PDOTg-kqy9JWNJ8J1fp7jcPDO3VO178u4knI
+id: bedrock_account_menu
+theme: bedrock
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

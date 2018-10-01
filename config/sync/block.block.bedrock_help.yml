@@ -1,0 +1,22 @@
+uuid: 83d29c0d-18d4-48c6-a48e-714b8cfc9c21
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bedrock
+_core:
+  default_config_hash: Qs_-Q1au_CUrtRcblYE_BbT90XxmLW1IyxQEqJiRfpk
+id: bedrock_help
+theme: bedrock
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

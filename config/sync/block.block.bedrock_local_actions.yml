@@ -1,0 +1,20 @@
+uuid: 823c626c-2604-442f-8281-cfaf8f6e6dca
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bedrock
+_core:
+  default_config_hash: XgpcZyFhEOcdhYrjZdh0jw0h7VYSiThb4xEiHrwbvSo
+id: bedrock_local_actions
+theme: bedrock
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

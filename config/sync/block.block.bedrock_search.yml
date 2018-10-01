@@ -1,0 +1,22 @@
+uuid: e653b7c2-63a6-4986-91d0-fef87ff38f4f
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bedrock
+_core:
+  default_config_hash: cIHQE8ZZm93-Y7xpKDnj3ZItdFnlbrXhprjQC83vL3o
+id: bedrock_search
+theme: bedrock
+region: header
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

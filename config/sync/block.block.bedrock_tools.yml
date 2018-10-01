@@ -1,0 +1,26 @@
+uuid: d251c304-880c-4adb-a1c0-2bf7af47dc5d
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - bedrock
+_core:
+  default_config_hash: q7B11KAxjQxgB3Li_XsAQk0gHIVl_pMVUkrDVQAqWEI
+id: bedrock_tools
+theme: bedrock
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

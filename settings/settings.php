@@ -27,6 +27,34 @@ ini_set('session.gc_divisor', 100);
 ini_set('session.gc_maxlifetime', 200000);
 ini_set('session.cookie_lifetime', 2000000);
 
+// Environment indicator.
+$config['environment_indicator.indicator']['bg_color'] = '#863DA1';
+$config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
+$config['environment_indicator.indicator']['name'] = 'Local';
+// Environment dependent configuration.
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+    case 'live':
+      // Environment indicator.
+      $config['environment_indicator.indicator']['bg_color'] = '#FF0100';
+      $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
+      $config['environment_indicator.indicator']['name'] = 'Live';
+      break;
+    case 'test':
+      // Environment indicator.
+      $config['environment_indicator.indicator']['bg_color'] = '#F39500';
+      $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
+      $config['environment_indicator.indicator']['name'] = 'Test';
+      break;
+    case 'dev':
+      // Environment indicator.
+      $config['environment_indicator.indicator']['bg_color'] = '#0FC37B';
+      $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
+      $config['environment_indicator.indicator']['name'] = 'Development';
+      break;
+  }
+}
+
 /**
  * Include local configuration.
  *

@@ -1,0 +1,20 @@
+uuid: 5d1516b4-c83e-4176-b11c-60bc34ceafa4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bedrock
+_core:
+  default_config_hash: E_oQr6AZRU50pqcJpx1N1qGSmWYKFAK0mLcdbQ5FcRM
+id: bedrock_page_title
+theme: bedrock
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

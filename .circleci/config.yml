@@ -99,6 +99,7 @@ jobs:
             git config --global user.name "Josué"
             echo 'Host *' >> /root/.ssh/config
             echo '   StrictHostKeyChecking no' >> /root/.ssh/config
+            terminus connection:set demo-particle.dev git
             ahoy site deploy master "Auto deploy triggered from master branch"
       - run:
           name: Install and login terminus
@@ -107,7 +108,9 @@ jobs:
             curl -O https://raw.githubusercontent.com/pantheon-systems/terminus-installer/master/builds/installer.phar && php installer.phar install
             ln -s /var/www/demo_particle/terminus/vendor/bin/terminus /usr/bin/terminus
             terminus auth:login --machine-token=$PANTHEON_TOKEN
+            terminus connection:set demo-particle.dev sftp
             terminus drush demo-particle.dev -- si trichechus --account-pass=admin -y
+            terminus connection:set demo-particle.dev git
             terminus drush demo-particle.dev -- config-set "system.site" uuid "$SITE_UUID" -y
             terminus drush demo-particle.dev -- cim -y
             terminus drush demo-particle.dev -- cr

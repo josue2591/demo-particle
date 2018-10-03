@@ -92,6 +92,13 @@ jobs:
             # @TODO: Add ssh_key fingerprint here.
             - "4e:7b:2a:a4:b6:59:4c:90:30:dd:ee:a6:19:bb:ab:aa"
       - run:
+          name: Install and login terminus
+          command: |
+            mkdir terminus && cd terminus
+            curl -O https://raw.githubusercontent.com/pantheon-systems/terminus-installer/master/builds/installer.phar && php installer.phar install
+            ln -s /var/www/demo_particle/terminus/vendor/bin/terminus /usr/bin/terminus
+            terminus auth:login --machine-token=$PANTHEON_TOKEN
+      - run:
           name: Deploy
           command: |
             # @TODO: Configure git.
@@ -102,12 +109,8 @@ jobs:
             terminus connection:set demo-particle.dev git
             ahoy site deploy master "Auto deploy triggered from master branch"
       - run:
-          name: Install and login terminus
+          name: deploy commands
           command: |
-            mkdir terminus && cd terminus
-            curl -O https://raw.githubusercontent.com/pantheon-systems/terminus-installer/master/builds/installer.phar && php installer.phar install
-            ln -s /var/www/demo_particle/terminus/vendor/bin/terminus /usr/bin/terminus
-            terminus auth:login --machine-token=$PANTHEON_TOKEN
             terminus connection:set demo-particle.dev sftp
             terminus drush demo-particle.dev -- si trichechus --account-pass=admin -y
             terminus connection:set demo-particle.dev git

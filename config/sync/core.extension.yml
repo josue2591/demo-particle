@@ -78,6 +78,7 @@ theme:
   seven: 0
   bedrock: 0
   particle: 0
+  material_admin: 0
 profile: trichechus
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
